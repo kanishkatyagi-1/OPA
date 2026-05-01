@@ -5,7 +5,7 @@ allow if{
 }
 
 # Manager → read/write reports
-allow if{
+allow if{                                               
     input.user.role == "manager"
     input.resource == "reports"
     input.action == "read"
